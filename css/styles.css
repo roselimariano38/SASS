@@ -1,0 +1,129 @@
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+html body .navbar {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  font-family: "Lobster", cursive;
+}
+
+.larger-font {
+  font-size: 55px;
+}
+
+.sale-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  font-size: 24px;
+  color: #1F19C2;
+  padding-top: 150px;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  color: #1F19C2;
+  font-size: 32px;
+  padding-bottom: 30px;
+  padding-left: 80px;
+}
+
+.h2 {
+  color: #1F19C2;
+  font-size: 32px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #1F19C2;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card .card-img-top {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.card .card-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card .card-text {
+  color: #261FF5;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1F19C2;
+  border-color: #1F19C2;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #1F19C2;
+  border-color: #1F19C2;
+}
+
+.footer {
+  background-color: #333;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+.footer .sub-footer {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.footer a {
+  color: #1F19C2;
+}
+
+.col-md-4 {
+  color: #1F19C2;
+  font-size: 18px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */

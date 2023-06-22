@@ -1,0 +1,38 @@
+
+.larger-font {
+  font-size: 55px;
+}
+
+.sale-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  font-size: 24px;
+  color: $letr-color;
+  padding-top: 150px;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
