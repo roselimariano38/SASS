@@ -7,13 +7,13 @@
   <title>Minha PetShop</title>
 
   <!-- Adicionando os estilos do Bootstrap -->
-  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <!-- Adicionando o arquivo de estilos personalizados -->
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
 
-  <!-- styles do glogle fontes  -->
+  <!-- Estilos das fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 <body>
   <!-- Barra de navegação -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center mx-auto" href="#">
         <div class="rounded-circle bg-secondary mr-3">
@@ -36,30 +36,31 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#contatoModal">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link " href="#" data-toggle="modal" data-target="#servicosModal">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link"  href="#produtos" >Produtos</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <!-- Conteúdo principal -->
   <div class="container">
     <h1 class="h2">Bem-vindo à Minha PetShop</h1>
     <p>Encontre os melhores produtos e serviços para o seu pet.</p>
 
     <!-- Produtos -->
-    <div class="row mt-5">
+    <div class="row mt-5" id="produtos">
       <div class="col-md-4">
         <div class="card">
           <img src="./image/Coleira1.jpg" class="card-img-top" alt="Produto 1">
@@ -122,7 +123,30 @@
       </div>
     </div>
   </div>
-  <footer class="footer bg-light mt-5">
+  <div class="container container3  ">
+    <h1 sub-heading>Receber Promoções</h1>
+    <form>
+      <div class="form-group ">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" placeholder="Digite seu telefone">
+      </div>
+
+      <div class="form-group">
+        <button type="submit " class=" btn-submit">Inscrever-se</button>
+      </div>
+    </form>
+  </div>
+  <footer class="footer  mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -148,16 +172,86 @@
         </div>
       </div>
       <hr>
-      <p class="text-center  sub-footer">© 2023 Minha PetShop. Todos os direitos reservados.</p>
+      <p class="text-center  sub-footer">©2023 Minha PetShop. Todos os direitos reservados. Desenvolvido por: Roseli Mariano</p>
     </div>
   </footer>
 
+  <!-- Modal de Contato -->
+  <div class="modal fade" id="contatoModal" tabindex="-1" role="dialog" aria-labelledby="contatoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contatoModalLabel">Entre em contato conosco</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulário de contato -->
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Adicionando os scripts da biblioteca-->
+  <!-- Modal de Serviços -->
+  <div class="modal fade" id="servicosModal" tabindex="-1" role="dialog" aria-labelledby="servicosModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-2" id="servicosModalLabel">Nossos Serviços</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Lista de serviços -->
+          <h6 class="fs-3 ">Vendas de alimentos</h6>
+          <p class="fs-3">Oferecemos uma ampla variedade de alimentos para pets, garantindo uma dieta equilibrada e saudável.</p>
 
-  <script src="./vendor/jquery/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+          <h6 class="fs-3">Vendas de acessórios</h6>
+          <p class="fs-3">Contamos com uma diversidade de acessórios para pets, desde coleiras e camas até brinquedos e roupinhas.
+          </p>
+
+          <h6 class="fs-3">Serviços de embelezamento</h6>
+          <p class="fs-3">Proporcionamos serviços de banho, tosa e embelezamento para deixar seu pet sempre bonito e cheiroso.</p>
+
+          <h6 class="fs-3">Serviços de saúde</h6>
+          <p class="fs-3">Cuidamos da saúde do seu pet com serviços de vacinação, consultas veterinárias e acompanhamento clínico.
+          </p>
+
+          <h6 class="fs-3">Assessoria para pets</h6>
+          <p class="fs-3">Oferecemos assessoria personalizada para ajudar você a cuidar e suprir todas as necessidades do seu pet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <!-- Adicionando os scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

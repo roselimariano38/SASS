@@ -25,10 +25,14 @@
   width: 100%;
   text-align: center;
 }
+.navbar-nav {
+ 
+  max-width: 100%;
+}
 
-.navbar-nav .nav-link {
-  font-size: 24px;
-  color: $letr-color;
+.nav-link {
+  font-size: 22px;
+  color: $letr-color; 
   padding-top: 150px;
 }
 
@@ -36,3 +40,7 @@
   margin-top: 50px;
   text-align: center;
 }
+ .modal-body{
+  background-color: $b-color;
+ 
+ }
